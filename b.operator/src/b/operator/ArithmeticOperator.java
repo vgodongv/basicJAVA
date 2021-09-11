@@ -20,7 +20,7 @@ public class ArithmeticOperator {
 	      System.out.println(result);
 
 	      //5개의 산술연산자를 사용해 5개의 연산을 수행 후 결과를 출력해주세요
-	      /*int a = 20 + 20 ; 
+	      /* int a = 20 + 20 ; 
 	      System.out.println(a);
 	      int b= 30-10;
 	      System.out.println(b);
