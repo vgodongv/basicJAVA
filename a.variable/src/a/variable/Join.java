@@ -6,7 +6,7 @@ public class Join {
 	public static void main(String[] args) {
 		/*   다음과 같은 프로그램을 만들어주세요
 	      ==회원가입==
-	      아이디> admin
+	      아이디>  admin
 	      비밀번호(4자리숫자)>1234
 	      이름>홍길동
 	      나이>99
