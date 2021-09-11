@@ -1,7 +1,7 @@
 package a.variable;
  import java.util.Scanner;
  
-public class join {
+public class Join {
 
 	public static void main(String[] args) {
 		/*   다음과 같은 프로그램을 만들어주세요

@@ -6,7 +6,40 @@ import java.util.Scanner; // Scanner는 java.util아래에있는 스캐너
 
 public class Variable { //클래스: 데이터와 기능을 모아놓은것
 
-public static void main(String[] args) { 
+public static void main(String[] args) {
+	
+	
+
+/* 
+ 
+  * 자바의 데이터 타입 (총8개)
+1) 기본형
+- 정수: byte(1), short(2), int(4/약20억), long(8)- 접미사 L을 붙여야 long타입이된다.
+- 실수: float(4/7자리), double(8/15자리) => 소수점이 있는 실수저장
+       접미사 f를 붙여야 float타입이된다. 안붙이면 double타입
+       ex. float z =  3.14f;
+- 문자: char(2) - char의 경우 따옴표안에 반드시 한 글자를 넣어야 한다.
+       ex.  char abc ="abc";
+- 논리: boolean(1) -> 참과 거짓. true아니면 false 둘중 하나만 저장가능
+
+cf) char과 short는 같은 2바이트지만 크기는 다름.
+
+2) 참조형 타입
+- 문자열: String(4) - 쌍따옴표로 문자열을 표현한다. 쌍따옴표 안에는 아무것도 안들어가거나
+한개만 들어가거나 많이 들어가도된다.
+
+ * 명명 규칙
+ - 영문자 대소문자, 한글(잘안씀), 숫자, 특수문자('_', '$')를 사용할 수 있다.
+ - 숫자로는 시작할 수 없다.
+ - 예약어는 사용할 수 없다. 예약어- 이미 자바에서 사용하고 있는 단어~
+ - [낙타식 표기법을 사용한다. 첫번째 단어는 소문자만 사용하고 나머지의 단어들은 첫글자만 대문자를 사용하는 방법.
+    (mySampleVariable)]
+ - [클래스명의 첫글자는 대문자로한다.(MySampleClass)]
+ 
+ */
+	
+	
+
 //	메서드: 명령문의 집합
  // main 메서드: 프로그램의 시작과 끝 
 
@@ -17,44 +50,11 @@ public static void main(String[] args) {
  // 프로그래밍: 컴퓨터에게 일을 시키기 위해 일하는 과정을 만드는것
  // 재료: 데이터와 조작
 
- int x;
- long y;
- float z;
- char abc;
- boolean boolean$;
- String name123; 
- x= 10;
- y= 20L; //접미사 L을 붙여야  long타입이된다.
- z= 3.14f; // 접미사 f를 붙여야 float타입이된다. 안붙히면 double타입
- abc= '가'; // 따옴표안에 반드시 한글자를 넣어야한다.
- boolean$= true; // true아니면 false 둘중하나만 저장가능
+ 
+// 형변환
 
-
- byte a;
- short b;
- int c;
- long d;
- float e;
- double f;
- char g;
- boolean h;
- String i;
-
- a= 3;
- b= 10;
- c= 200;
- d= 5L;
- e= 3.15f;
- f= 3.16;
- g= '나';
- h= false;
- i= "사과는 apple";
-
- int q= 10;
-
-
- int _int= 10;
- long _long= 20L;
+int _int = 10;
+long _long = 30;
 
  _int =(int) _long; // long타입이  int타입으로 바뀌어 저장.
  _long= _int; //표현 범위가 작은 타입에서 큰 타입으로의 형변환은 생략할 수 있다.
@@ -68,11 +68,16 @@ public static void main(String[] args) {
  abz=(int)abcd; // float를  int(원래long인데 윗줄에서 int됨)로
  abcd = ab; // int를 float로
 
+ float zx = 10.5f;
+ double xc;
+ xc = zx;  // float 값을 double로 형변환
+System.out.println(zx); // 결과값 float zx값은 10.5f에서 10.5됨
+		 
  char ch = 'a';
  short sh= 10; // 같은 2바이트여도 크기가 다르다함;
 
  ch = (char)sh;
- sh=(short)ch; // J애서 이렇게 ㅋ..
+ sh=(short)ch; // J애서 이렇게 형변환하기도함 ㅋ..
 
  System.out.print("출력");
  System.out.println("출력 후! 줄바꿈");
@@ -83,9 +88,9 @@ public static void main(String[] args) {
  System.out.println();
  System.out.println("탭은\t4칸에 맞춰 띄워줍니다."); // \t=탭
  System.out.println("줄바꿈을 \n해줍니다."); // \n=줄바꿈
- System.out.println("\"쌍따옴표를 넣어줍니다.\"");
- System.out.println("\\역슬래시를 넣어줍니다.");
-
+ System.out.println("\"쌍따옴표를 넣어줍니다.\""); // \"를 한쌍으로보면됨
+ System.out.println("\\역슬래시를 넣어줍니다.");	// \\를 한쌍으로 보면됨		
+ 	
  // 입력
  Scanner sc= new Scanner(System.in); 
  // 스캐너라는 클래스가 어디서 왔는지 알수없어서 오류뜸. 위치를 정확히 알려줘야함.
@@ -119,12 +124,20 @@ public static void main(String[] args) {
  int age = Integer.parseInt(sc.nextLine());
  System.out.println("이름:" + name + " / 나이:" + age);
 
+ /*
+* 문자열 형변환
+String str을 형변환
+- byte로 변환: byte value = Byte.parseByte(str);
+- short로 변환: short value = Short.parseShort(str);
+- int로 변환: int value = Inte.parseInt(str);
+- long으로 변환: long value = Long.parseLong(str);
+- float로 변환: float value = Float.parseFloat(str);
+- doble로 변환: double value = Double.parseDouble(str);
+- boolean로 변환: boolean value = Boolean.parseBoolean(Str);
+
+*/
 
 
- float zx= 10.5f;
- double xc;
- xc =  zx; // float값을 double값으로 형변환
- System.out.println(zx);// 결과값 10.5
 }
 
 }
