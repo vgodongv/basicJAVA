@@ -111,11 +111,11 @@ public class Array {
       
    System.out.println(Arrays.toString(shuffle));
    
-  
+  // j의 값은 인덱스가 될거라 중복이어도 노상관
    for(int i=0; i<shuffle.length; i++){
 	   int j = (int)(Math.random()*shuffle.length);
-	   
-	   // 0~9까지랜덤수
+	   System.out.println(j);
+	
 	   int temp = shuffle[0];
 	   
 	   shuffle[0] = shuffle[j];
