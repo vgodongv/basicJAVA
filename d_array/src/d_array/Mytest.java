@@ -5,33 +5,30 @@ import java.util.Arrays;
 public class Mytest {
 
 	public static void main(String[] args) {
+		//1~10까지 500번생성후 각 숫자가 몇번 생성되었는지 출력
 		
-			int[] random =  new int[500];
-			
-			int [] count =  new int[10];
-			
-			int [] num = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-			
-			
-			for(int i=0; i<random.length; i++){
-				random[i] = (int)(Math.random()*10)+1;
+				int[] arr = new int[500];
+				int[] count= new int[10];
 				
-			for(int j=0; j<num.length; j++)
-				if(random[i] == num[j]){
-					count[j]++;
-					
+				
+				for(int i=0; i<arr.length; i++) {
+					arr[i]=(int)(Math.random()*count.length)+1;
+				}
+				System.out.println(Arrays.toString(arr));
+				for(int i=0; i<arr.length; i++) {
+					for(int j=1; j<count.length+1; j++) {
+						if(arr[i]==j) {
+							count[j-1]++;
+							System.out.println(j+"이 발생된 횟수는"+count[j-1]);
+						}
+					}
+				
 				}
 				
-				}
-			System.out.println(Arrays.toString(random));
-			
-			for(int k=0; k<num.length; k++){
-			System.out.println(k+1+"이 생성된 횟수는"+count[k]);}
-			
-		
+			}
+
 		}
 
-	}
 
 	// 쓰앵릠 counts[random-1]++;
 
