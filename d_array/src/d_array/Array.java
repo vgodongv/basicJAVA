@@ -124,9 +124,7 @@ public class Array {
    }
    System.out.println(Arrays.toString(shuffle));
 
-   for(int i=0; i<shuffle.length; i++){
-	   int y=0;
-   }
+
    
    
 	}
