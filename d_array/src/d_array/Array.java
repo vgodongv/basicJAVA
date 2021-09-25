@@ -114,6 +114,12 @@ public class Array {
   // j의 값은 인덱스가 될거라 중복이어도 노상관
    for(int i=0; i<shuffle.length; i++){
 	   int j = (int)(Math.random()*shuffle.length);
+	   /* Math.random()의 반환값은 0.0~0.99999미만의 값임
+	    * 때문에 10을곱하면 0.0~9.99999..즉 0~9까지의 랜덤수를 
+	    * 반환받음. 여기에  1을 더하면 범위는 1.0~10.999..를
+	    * 가지게 되어 1~10까지의 수를 반환함.
+	    */
+	   
 	   System.out.println(j);
 	
 	   int temp = shuffle[0];
