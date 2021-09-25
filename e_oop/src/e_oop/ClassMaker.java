@@ -29,7 +29,7 @@ public class ClassMaker {
 	   // 메서드안에 두 파라미터를 곱한 결과를 리턴
 	   
 	   int methodddd(int z,int y){
-	      return z*y;
+	        return z*y;
 	   }
 	    
 	   //return : 값을 돌려주는 역할과 메서드를 종료시키는 역할. void 메서드에서도 return사용가능한데 이때가 메서드를 종료시키는역할.
