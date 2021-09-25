@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class Quiz {
 
-	public static void main(String[] args) {
+	public static void main(String[] args)  {
 
 		/*int money = (int)(Math.random()*500) * 10;
 		int[] coin = {500, 100, 50, 10};
