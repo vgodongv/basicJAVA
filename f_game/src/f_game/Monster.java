@@ -2,6 +2,7 @@ package f_game;
 
 public class Monster {
 
+
 	String name; //이름
 	int maxHP;   //최대 체력
 	int maxMP;   //최대마나
@@ -27,7 +28,7 @@ public class Monster {
 		int damage=att-c.def;
 		damage = damage <= 0 ? 1: damage; //몬스터 방어력이 더 높으면?
 		c.hp =c.hp <damage ?c.hp -c.hp:c.hp-damage;
-		System.out.println(name+"가 공격으로"+c.name+"에게"+damage+"만큼 데미지를 주었습니다.");
+		System.out.println(name+"이 공격으로"+c.name+"에게 "+damage+"만큼 데미지를 주었습니다.");
 		System.out.println(c.name+"의현재 HP"+c.hp);
 	}
 	
