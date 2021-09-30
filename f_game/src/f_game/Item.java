@@ -4,8 +4,7 @@ public class Item {
 	String name; //아이템 이름
 	int hp;      //체력
 	int mp;      //마나
-	int att;  
-	//공격력
+	int att;     //공격력
 	int def;     //방어력
 	
 	//생성자 만들어서 변수 초기화

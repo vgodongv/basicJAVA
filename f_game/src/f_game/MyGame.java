@@ -8,6 +8,7 @@ public class MyGame {
 	// 게임에 등장하는 것들 = 캐릭터, 아이템 등을 변수로 만듬
 	
 	Character c;
+	
 	Item[] items;
 	
 	MyGame(){
