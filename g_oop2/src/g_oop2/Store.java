@@ -5,7 +5,6 @@ public static void main(String[] args) {
 		
 		//°´Ã¼»ý¼º
 		Desktop d= new Desktop();
-		
 		Aircon ac = new Aircon();
 		TV tv = new TV();
 		
