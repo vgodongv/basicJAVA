@@ -54,7 +54,7 @@ public class AccessModifier {
 		t.setMinute(59);
 		t.setSecond(55);
 		
-		System.out.println(t); // �썝�옒 �씠�젃寃� 洹몃깷 媛앹껜瑜� 異쒕젰�븯硫� 二쇱냼�굹�삤�뒗�뜲 Time�겢�옒�뒪�뿉�꽌 to String() �뜥�꽌 蹂��솚�릺�뼱�꽌 �굹�샂.
+		System.out.println(t);// 원래 이렇게 그냥 객체를 출력하면 주소나오는데 Time클래스에서 to String() 써서 변환되어서 나옴.
 		
 		t.clock();
 		//t.stop();
