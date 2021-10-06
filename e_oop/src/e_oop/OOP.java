@@ -4,23 +4,23 @@ public class OOP {
 
 	public static void main(String[] args) {
 		/*
-	       * °´Ã¼ÁöÇâ ÇÁ·Î±×·¡¹Ö(Object Oriented Programming)
-	       * - ÇÁ·Î±×·¥À» ´Ü¼øÈ÷ ÄÚµåÀÇ ¿¬¼ÓÀ¸·Î º¸´Â°ÍÀÌ ¾Æ´Ï¶ó °´Ã¼°£ÀÇ »óÈ£ÀÛ¿ëÀ¸·Î º¸´Â°Í
-	       * - ÄÚµåÀÇ Àç»ç¿ë¼ºÀÌ ³ô°í À¯Áöº¸¼ö°¡ ¿ëÀÌÇÏ´Ù.
+	       * ê°ì²´ì§€í–¥ í”„ë¡œê·¸ë˜ë°(Object Oriented Programming)
+	       * - í”„ë¡œê·¸ë¨ì„ ë‹¨ìˆœíˆ ì½”ë“œì˜ ì—°ì†ìœ¼ë¡œ ë³´ëŠ”ê²ƒì´ ì•„ë‹ˆë¼ ê°ì²´ê°„ì˜ ìƒí˜¸ì‘ìš©ìœ¼ë¡œ ë³´ëŠ”ê²ƒ
+	       * - ì½”ë“œì˜ ì¬ì‚¬ìš©ì„±ì´ ë†’ê³  ìœ ì§€ë³´ìˆ˜ê°€ ìš©ì´í•˜ë‹¤.
 	       */
 	      
-	      SampleClass sc = new SampleClass(); //°´Ã¼»ı¼º.
-	                                          // SampleclassÀÇ ³»¿ëÀÌ ¸Ş¸ğ¸®¿¡ ¿Ã¶ó°¡°í ¸Ş¸ğ¸®ÀÇ ÁÖ¼Ò°¡ sc¶ó´Â º¯¼ö¿¡ µé¾î°¨. ¶§¹®¿¡sc¸¦ ÅëÇØ SampleClass»ç¿ë°¡´É
+	      SampleClass sc = new SampleClass(); //ê°ì²´ìƒì„±.
+	                                          // Sampleclassì˜ ë‚´ìš©ì´ ë©”ëª¨ë¦¬ì— ì˜¬ë¼ê°€ê³  ë©”ëª¨ë¦¬ì˜ ì£¼ì†Œê°€ scë¼ëŠ” ë³€ìˆ˜ì— ë“¤ì–´ê°. ë•Œë¬¸ì—scë¥¼ í†µí•´ SampleClassì‚¬ìš©ê°€ëŠ¥
 	      System.out.println(sc.field);
 	      
-	      String returnValue = sc.method1(10); //È£ÃâÇÑ ¸Ş¼­µå¸¦ returnValue º¯¼ö¿¡ ÀúÀå
+	      String returnValue = sc.method1(10); //í˜¸ì¶œí•œ ë©”ì„œë“œë¥¼ returnValue ë³€ìˆ˜ì— ì €ì¥
 	      System.out.println(returnValue);
 	       
 	      sc.method2();
 	      
 	      sc.flowTest1();
 	      
-	      Calculator calculator= new Calculator(); //°´Ã¼»ı¼º
+	      Calculator calculator= new Calculator(); //ê°ì²´ìƒì„±
 	      
 	       long result1 = calculator.add(123456, 654321);
 	      System.out.println(result1);
@@ -38,7 +38,7 @@ public class OOP {
 	      System.out.println(result5);
 	      
 
-	      /*¾²¾Ş‚ ÄÚµå
+	      /*ì“°ì•µë‹˜ ì½”ë“œ
 	       double result = cal.add
 	      result=cal.mul
 	      result=cal.div
