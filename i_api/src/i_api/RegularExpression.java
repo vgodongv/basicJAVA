@@ -27,8 +27,7 @@ public class RegularExpression {
 		 * \D 숫자가 아닌 문자
 		 * (?i) 뒷 문자의 대소문자 구분안함
 		 * \ 정규 표현식에서 사용되는 특수문자 표현
-		 * 
-		 * 
+		 * 		  
 		 */
 
 		String str ="abc123"; // 검사할 문자열
