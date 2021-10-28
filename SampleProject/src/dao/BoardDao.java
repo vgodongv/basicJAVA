@@ -3,6 +3,8 @@ package dao;
 import java.util.List;
 import java.util.Map;
 
+import util.JDBCUtil;
+
 public class BoardDao {
 	 private BoardDao(){}
 	    private static BoardDao instance;

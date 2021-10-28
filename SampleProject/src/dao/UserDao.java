@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
+import util.JDBCUtil;
+
 public class UserDao {
 	 //ΩÃ±€≈Ê ∆–≈œ
     private UserDao(){}

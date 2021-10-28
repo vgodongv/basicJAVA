@@ -1,5 +1,7 @@
 package util;
 
+import java.util.Scanner;
+
 public class ScanUtil {
 
 	//메서드에 static을 붙히는 이유는 객체를 생성하고 싶지 않아서.
