@@ -22,7 +22,7 @@ public class Controller {
 	       * 발표는 10.27.(수)오후에 ppt이용해서 15~20분 정도.
 	       */
 
-	      new Controller().start();
+	       new Controller().start();
 	   }
 	   
 	   public static Map<String, Object> loginUser = null;
